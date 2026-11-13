@@ -1,6 +1,17 @@
 # Glamoura — Beauty E-Commerce App
 
-A bilingual Flutter shopping-app prototype for browsing beauty and personal-care products through a complete local shopping flow.
+A bilingual Flutter shopping-app prototype for beauty and personal-care products, with a complete local browsing and shopping experience.
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Flutter-3.3%2B-02569B?logo=flutter" alt="Flutter">
+  <img src="https://img.shields.io/badge/Dart-3.3%2B-0175C2?logo=dart" alt="Dart">
+  <img src="https://img.shields.io/badge/State%20Management-Provider-7B1FA2" alt="Provider">
+  <img src="https://img.shields.io/badge/Storage-SharedPreferences-4CAF50" alt="SharedPreferences">
+</p>
+
+## Overview
+
+Glamoura lets users discover beauty products, explore product details, manage favorites and a shopping cart, and follow a checkout demonstration. The interface supports Arabic and English and offers light and dark themes.
 
 ## Features
 
@@ -8,28 +19,52 @@ A bilingual Flutter shopping-app prototype for browsing beauty and personal-care
 - Product categories, search, filtering, and sorting
 - Product details with shade and quantity selection
 - Shopping cart and favorites
-- Promo-code handling
+- Promo-code handling and order summary
 - Checkout form and order-success flow
 - Local order history
 - Arabic and English localization
 - Light and dark themes
 - Local persistence for cart, favorites, orders, language, and theme
 
-## Tech Stack
-
-- Flutter and Dart
-- Provider for state management
-- SharedPreferences for local persistence
-- Repository abstraction with mock product data
-
 ## Screenshots
 
-Real in-app screenshots have not been added to this repository yet. Capture the running application and add the images under `screenshots/`. Suggested filenames:
+Add real screenshots captured from the running application to display the app gallery here.
 
-- `screenshots/01-home.png`
-- `screenshots/02-product-details.png`
-- `screenshots/03-shopping-cart.png`
-- `screenshots/04-checkout.png`
+| Home screen | Product details |
+|---|---|
+| `screenshots/01-home.png` | `screenshots/02-product-details.png` |
+
+| Shopping cart | Checkout |
+|---|---|
+| `screenshots/03-cart.png` | `screenshots/04-checkout.png` |
+
+## Built With
+
+- **Flutter & Dart** — cross-platform mobile UI
+- **Provider** — state management
+- **SharedPreferences** — local persistence
+- **Repository abstraction** — separation of data access from UI
+- **Mock product data** — sample beauty catalog
+
+## Getting Started
+
+### Prerequisites
+
+- Flutter SDK with Dart 3.3 or later
+- Android Studio or another Flutter-supported IDE
+- Android emulator or a connected device
+
+### Run locally
+
+```bash
+git clone https://github.com/abdallahkali/glamoura.git
+cd glamoura
+flutter pub get
+flutter devices
+flutter run
+```
+
+To target a particular device, use `flutter run -d <device-id>`.
 
 ## Project Structure
 
@@ -45,45 +80,14 @@ assets/
   images/     # Product images used by the app
 ```
 
-## Getting Started
-
-### Requirements
-
-- Flutter SDK with Dart **3.3 or later**
-- Android Studio or another Flutter-supported IDE
-- An Android emulator or a connected device
-
-### Run locally
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/abdallahkali/glamoura.git
-   ```
-2. Open the project directory:
-   ```bash
-   cd glamoura
-   ```
-3. Install dependencies:
-   ```bash
-   flutter pub get
-   ```
-4. Check available devices:
-   ```bash
-   flutter devices
-   ```
-5. Run the app:
-   ```bash
-   flutter run
-   ```
-
-To target a particular device, use `flutter run -d <device-id>`.
-
-## Data and Limitations
+## Current Scope & Limitations
 
 - Product catalog and checkout currently use mock/local data.
-- Card payment is a UI flow only; no real payment gateway is connected.
-- Orders are stored locally; there is no production backend or inventory service in this version.
+- Card payment is a UI demonstration; no real payment gateway is connected.
+- Orders are stored locally; there is no production backend or inventory service.
 
-## Repository
+## Author
 
-https://github.com/abdallahkali/glamoura
+**Abdallah Khalifa** · [GitHub](https://github.com/abdallahkali)
+
+[⬆ Back to top](#glamoura--beauty-e-commerce-app)
